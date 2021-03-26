@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m2206_descr">說明:</string>
+    <string name="m2206_t001">選擇:</string>
+    <string name="m2206_name">名稱:</string>
+    <string name="m2206_add">住址:</string>
+    <string name="img">圖片</string>
+    <string name="opendata">匯入opendata</string>
+    <string name="title">請稍等</string>
+    <string name="message">執行中...</string>
+    <string name="ncount">共計:</string>
+    <string name="loading">數據載入中......</string>
+    <string name="Zipcode">郵遞區號:</string>
+    <string name="menu_top">跳到首筆</string>
+    <string name="menu_end">跳到尾筆</string>
+    <string name="loadover">重新載入完成</string>
+    <string name="menu_next">+100</string>
+    <string name="menu_back">-100</string>
+    <string name="show_title1">顯示景點</string>
+    <string name="show_title2">顯示旅館</string>
+
+    <string name="btn_getweather">取得當地天氣狀態</string>
+    <string name="country">"地區: "</string>
+    <string name="Temperature">溫度:</string>
+    <string name="Temperature_Min">最低溫度:</string>
+    <string name="Temperature_Max">最高溫度:</string>
+    <string name="Humidity">"濕度: "</string>
+    <string name="Pressure">"氣壓: "</string>
+    <string name="areaname">英文地名:</string>
+    <string name="w_description">狀況:</string>
+    <string name="w_icon">圖示網址:</string>
+    <string name="img_des">天氣圖片</string>
+    <string name="showpic">天氣圖片:</string>
+    <string name="weather_lon">經度:</string>
+    <string name="weather_lat">緯度:</string>
+    <string name="weather_name">地點:</string>
+    <string name="home_dilog_close">關閉</string>
+    <string name="go_map_navigation">導航</string>
+    <string name="selete_text">請點擊顯示景點觀看資料</string>
+    <string name="go_map">前往地圖</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title01">☆☆旅遊景點☆☆</string>
+    <string name="dialog_title02">☆☆飯店民宿☆☆</string>
+    <string name="dialog_b001">下載數據資料</string>
+    <string name="dialog_t001">啟動:</string>
+    <string name="dialog_positive">是</string>
+    <string name="dialog_negative">否</string>
+    <string name="dialog_neutral">取消</string>
+</resources>

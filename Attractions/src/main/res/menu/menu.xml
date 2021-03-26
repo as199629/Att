@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:orderInCategory="999"
+        android:title="@string/action_setting"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_icon"
+        android:icon="@drawable/map"
+        android:orderInCategory="100"
+        android:title="@string/item01" />
+    <item
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:orderInCategory="1100"
+        android:title="選擇"
+        android:visible="false"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_trace_on"
+                android:icon="@drawable/c0b"
+                android:orderInCategory="200"
+                android:title="@string/menu_trace_on"
+                android:visible="true" />
+            <item
+                android:id="@+id/menu_trace_off"
+                android:icon="@drawable/c00"
+                android:orderInCategory="300"
+                android:title="@string/menu_trace_off"
+                android:visible="false" />
+            <item
+                android:id="@+id/m_trace_clear"
+                android:icon="@drawable/mclear"
+                android:orderInCategory="400"
+                android:title="@string/m_traceclear"
+                android:visible="false" />
+            <item
+                android:id="@+id/menu_3D"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:orderInCategory="500"
+                android:title="@string/item03"
+                android:visible="false" />
+            <item
+                android:id="@+id/menu_3Da"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:orderInCategory="600"
+                android:title="@string/item04"
+                android:visible="false" />
+        </menu>
+    </item>
+
+</menu>

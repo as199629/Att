@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m1901"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/map_b001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@android:layout/browser_link_context_header" />
+
+    <Spinner
+        android:id="@+id/spnMapType"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:alpha="0.6"
+        android:background="@android:drawable/spinner_dropdown_background" />
+
+    <Spinner
+        android:id="@+id/spnLocation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spnMapType"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:alpha="0.6"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkcontrol"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnMapType"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.5"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:checked="false"
+        android:gravity="center_vertical|center|start"
+        android:onClick="setZoomButtonsEnabled"
+        android:text="@string/CheckBox"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll01"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_above="@+id/Linear_msg"
+        android:layout_alignStart="@+id/checkcontrol"
+        android:alpha="0.5"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/Linear_setbutton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <CheckBox
+                android:id="@+id/zoom_buttons_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setZoomButtonsEnabled"
+                android:text="@string/zoom_buttons" />
+
+            <CheckBox
+                android:id="@+id/compass_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setCompassEnabled"
+                android:text="@string/compass" />
+
+            <CheckBox
+                android:id="@+id/mylocationlayer_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setMyLocationLayerEnabled"
+                android:text="@string/mylocation_layer" />
+
+            <CheckBox
+                android:id="@+id/scroll_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setScrollGesturesEnabled"
+                android:text="@string/scroll" />
+
+            <CheckBox
+                android:id="@+id/zoom_gestures_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setZoomGesturesEnabled"
+                android:text="@string/zoom_gestures" />
+
+            <CheckBox
+                android:id="@+id/tilt_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setTiltGesturesEnabled"
+                android:text="@string/tilt" />
+
+            <CheckBox
+                android:id="@+id/rotate_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66cccccc"
+                android:checked="true"
+                android:onClick="setRotateGesturesEnabled"
+                android:text="@string/rotate" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Linear_msg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:alpha="0.6"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtOutput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#66cccccc"
+            android:padding="3dp"
+            android:text="@string/showlocid"
+            android:textColor="@color/Teal"
+            android:textColorLink="@color/Teal" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#66cccccc"
+            android:text="@string/msg"
+            android:textColor="@color/Teal"
+            android:textColorLink="@color/Teal" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagetest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="495dp"
+        android:visibility="gone"
+        tools:srcCompat="@drawable/ic_launcher2206_background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/map_b001"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/map_b002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:text="Button"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="textsize14">14sp</dimen>
+    <dimen name="textsize16">16sp</dimen>
+    <dimen name="textsize18">18sp</dimen>
+    <dimen name="textsize20">20sp</dimen>
+    <dimen name="textsize22">22sp</dimen>
+    <dimen name="titlesize">18sp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="textsize">18sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ex">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="固定寬度">120dp</dimen>
+    <dimen name="pa05">5dp</dimen>
+    <dimen name="pa10">10dp</dimen>
+    <dimen name="pa5">5dp</dimen>
+    <dimen name="ma5">5dp</dimen>
+    <dimen name="Spacing">10dp</dimen>
+</resources>
